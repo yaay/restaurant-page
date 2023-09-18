@@ -4,6 +4,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: #fee6d7;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -75,6 +79,58 @@ nav a {
     gap: 4px;
 }
 
+.menu-hero {
+  text-align: center;
+  padding-top: 7vh;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(177, 160, 150, 0.5);
+  border-radius: 9px;
+  width: 80%;
+  margin: 3rem auto;
+  /* align-items: center; */
+}
+
+
+
+.sands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  margin: 2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-basis: 25rem;
+}
+
+.item .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.item .title span{
+  font-weight: 500;
+  float: right;
+}
+
+.item img {
+  width: 10rem;
+  height: 10rem;
+  display: cover;
+  border-radius: 30px;
+}
 
 .not-active {
     display: none;

@@ -1,9 +1,9 @@
 import { navbar } from './navbar';
 import { home } from './home'
 import { menu } from './menu'
-console.log('navbar');
+import { contact } from './contact'
 
-const conatiner = document.querySelector('#content');
+console.log('navbar');
 
 const tabs = document.querySelectorAll("[tab-target]")
 // console.log(tabs)
@@ -11,6 +11,16 @@ const tabs = document.querySelectorAll("[tab-target]")
 tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
         const target = tab.getAttribute("tab-target")
-        // conatiner.appendChild(home);
+        // select target tag and change remove no-display class
+        document.querySelector('home').classList.add('not-active')
+        document.querySelector('menu').classList.add('not-active')
+        document.querySelector('contact').classList.add('not-active')
+        document.querySelector(target).classList.remove('not-active')
+    })
 })
+
+const button = document.querySelector('.button-40')
+button.addEventListener('click', () => {
+    document.querySelector('menu').classList.remove('not-active')
+    document.querySelector('home').classList.add('not-active')
 })
