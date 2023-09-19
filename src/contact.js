@@ -3,8 +3,8 @@ const contact = (() => {
     const contact = document.createElement('contact')
 
     contact.innerHTML = `
-    <div class="menu-container">
-     <h1>Contact</h1>
+    <div class="contact-container">
+     
     </div>`
     //adding no-display class to menu
     contact.classList.add('not-active')
