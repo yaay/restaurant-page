@@ -71,8 +71,9 @@ nav a {
 
 .location {
     display: flex;
+    /* align-items: center; */
     padding-right: 10vw;
-    gap: 2px;
+    gap: 8px;
 }
 
 .working-hours {
@@ -94,7 +95,10 @@ nav a {
   padding-top: 7vh;
   font-size: 3rem;
   font-weight: 600;
-  color: #ffffff;
+  /* color: #ffffff; */
+  background: linear-gradient(to right, #e2dfd0 0%, #d6c2b8 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
   /* background: linear-gradient(to right, #3e3a28 0%, #d7d3c1 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
@@ -169,6 +173,41 @@ nav a {
 
 .not-active {
     display: none;
+}
+
+.contact-container {
+  background: url("../src/bg.jpg") rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat ;
+  background-blend-mode: multiply;
+  height: 94.5vh;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(90, 86, 75, 0.7);
+  border-radius: 9px;
+  width: 50%;
+  margin: 3rem auto;
+  padding-bottom: 3rem;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-info {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1rem;
+  
+
+    /* display: flex;
+    padding-right: 10vw;
+    gap: 8px; */
 }
 
 /* CSS */
